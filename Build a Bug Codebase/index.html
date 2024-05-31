@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a bug</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xsi7pln.css">
+    <link rel="stylesheet" href="template/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title_row">
+            <h1>BUILD A BUG!</h1>
+        </div>
+
+        <div class="content_row">
+
+            <div class="button_column">
+                <div class="button">
+                    <h2>Mouth</h2>
+                    <button class="arrow switcher_button_left" onclick="change_mouth(0)"></button>
+                </div>
+                <div class="button">
+                    <h2>Eyes</h2>
+                    <button class="arrow switcher_button_left" onclick="change_eyes(0)"></button>
+                </div>
+                <div class="button">
+                    <h2>Shell</h2>
+                    <button class="arrow switcher_button_left" onclick="change_shell(0)"></button>
+                </div>
+                <div class="button">
+                    <h2>Pattern</h2>
+                    <button class="arrow switcher_button_left" onclick="change_pattern(0)"></button>
+                </div>
+                <div class="button">
+                    <h2>Legs</h2>
+                    <button class="arrow switcher_button_left" onclick="change_legs(0)"></button>
+                </div>
+                <div class="button">
+                    <h2>Body Colour</h2>
+                    <button class="arrow switcher_button_left" onclick="change_colour(0)"></button>
+                </div>
+                <div class="button">
+                    <h2>Pattern Colour</h2>
+                    <button class="arrow switcher_button_left" onclick="change_pattern_colour(0)"></button>
+                </div>
+            </div>
+
+            <div class="THE_GUY">
+                <div id="legs" class="legs1 colour1"></div>
+                <div id="mouth" class="mouth1 colour1"></div>
+                <div id="shell" class="shell1 colour1"></div>
+                <div id="eyes" class="eyes1 colour1"></div>
+                <div id="pattern" class="pattern1 pattern_colour1"></div>
+            </div>
+
+            <div class="button_column">
+
+                <div class="button">
+                    <button class="arrow switcher_button_right" onclick="change_mouth(1)"></button>
+                    <select id="mouth_menu" class="part_menus" onchange="menu_change_mouth()">
+                        <option value="0">Mouth 1</option>
+                        <option value="1">Mouth 2</option>
+                        <option value="2">Mouth 3</option>
+                        <option value="3">Mouth 4</option>
+                        <option value="4">Mouth 5</option>
+                    </select>
+                </div>
+
+                <div class="button">
+                    <button class="arrow switcher_button_right" onclick="change_eyes(1)"></button>
+                    <select id="eyes_menu" class="part_menus" onchange="menu_change_eyes()">
+                        <option value="0">Eyes 1</option>
+                        <option value="1">Eyes 2</option>
+                        <option value="2">Eyes 3</option>
+                        <option value="3">Eyes 4</option>
+                        <option value="4">Eyes 5</option>
+                    </select>
+                </div>
+
+                <div class="button">
+                    <button class="arrow switcher_button_right" onclick="change_shell(1)"></button>
+                    <select id="shell_menu" class="part_menus" onchange="menu_change_shell()">
+                        <option value="0">Shell 1</option>
+                        <option value="1">Shell 2</option>
+                        <option value="2">Shell 3</option>
+                        <option value="3">Shell 4</option>
+                        <option value="4">Shell 5</option>
+                    </select>
+                </div>
+
+                <div class="button">
+                    <button class="arrow switcher_button_right" onclick="change_pattern(1)"></button>
+                    <select id="pattern_menu" class="part_menus" onchange="menu_change_pattern()">
+                        <option value="0">Pattern 1</option>
+                        <option value="1">Pattern 2</option>
+                        <option value="2">Pattern 3</option>
+                        <option value="3">Pattern 4</option>
+                        <option value="4">Pattern 5</option>
+                        <option value="5">No Pattern</option>
+                    </select>
+                </div>
+
+                <div class="button">
+                    <button class="arrow switcher_button_right" onclick="change_legs(1)"></button>
+                    <select id="legs_menu" class="part_menus" onchange="menu_change_legs()">
+                        <option value="0">Legs 1</option>
+                        <option value="1">Legs 2</option>
+                        <option value="2">Legs 3</option>
+                        <option value="3">Legs 4</option>
+                        <option value="4">Legs 5</option>
+                    </select> 
+                </div>
+
+                <div class="button">
+                    <button class="arrow switcher_button_right" onclick="change_colour(1)"></button>
+                    <select id="colour_menu" class="part_menus" onchange="menu_change_colour()">
+                        <option value="0">Colour 1</option>
+                        <option value="1">Colour 2</option>
+                        <option value="2">Colour 3</option>
+                        <option value="3">Colour 4</option>
+                        <option value="4">Colour 5</option>
+                        <option value="5">Colour 6</option>
+                    </select> 
+                </div>
+
+                <div class="button">
+                    <button class="arrow switcher_button_right" onclick="change_pattern_colour(1)"></button>
+                    <select id="pattern_colour_menu" class="part_menus" onchange="menu_change_pattern_colour()">
+                        <option value="0">Pattern Colour 1</option>
+                        <option value="1">Pattern Colour 2</option>
+                        <option value="2">Pattern Colour 3</option>
+                        <option value="3">Pattern Colour 4</option>
+                        <option value="4">Pattern Colour 5</option>
+                        <option value="5">Pattern Colour 6</option>
+                    </select> 
+                </div>
+            </div>
+        </div>
+
+        <div class="button_row">
+            <button class="RANDOMIZE" onclick="ULTRA_RANDOM()">RANDOMIZE</button>
+        </div>
+        <audio id="click"></audio>
+    </div>
+    <script src="template/js/script.js"></script>
+</body>
+</html>

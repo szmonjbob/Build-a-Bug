@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    --colour1: #0a1128;
+    --colour2: #5da399;
+    --colour3: #fbf5f3;
+    --colour4: #42858c;
+    --colour5: #35393c;
+    --colour8: rgb(0, 149, 255);
+}
+
+.container{
+    width: 100vw;
+    min-height: 900px;
+    height: 100vh;
+    padding: 10px 0;
+    background-color: var(--colour5);
+}
+
+.title_row {
+    display: flex;
+    justify-content: center;
+    font-family: hit, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: var(--colour3);
+}
+
+.content_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+
+
+.button_column{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    border-radius: 100px;
+    padding: 0px 30px;
+    transition: 0.5s;
+    background-color: var(--colour2);
+}
+
+h2{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: var(--colour3);
+    text-align: center;
+}
+.arrow{  
+    background-color: transparent;
+    border: solid var(--colour3);
+    border-width: 0 15px 15px 0;
+    display: inline-block;
+    padding: 3px;
+    height: 65%;
+    max-width: 120px;
+    aspect-ratio: 1/1;
+    transition: 0.5s;
+    filter: drop-shadow(-10px -10px 0px var(--colour1));
+}
+.arrow:hover{  
+    border: solid var(--colour2);
+    filter: drop-shadow(-10px -10px 0px var(--colour5));
+    border-width: 0 25px 25px 0;
+    height: 70%;
+    max-width: 140px;
+}
+
+.switcher_button_right{
+    transform: rotate(-45deg);
+}
+
+.switcher_button_left{
+    transform: rotate(135deg);
+}
+
+
+.button:hover {
+    color: var(--colour2);
+    background-color: var(--colour4);
+}
+
+.THE_GUY{
+    aspect-ratio: 393/550;
+    min-height: 600px;
+    margin: 0 20px;
+    position: relative;
+}
+
+/*BODY PARTS*/
+#legs{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.legs1{
+    background-image: url(../images/legs1.png);
+    background-size: cover;
+}
+.legs2{
+    background-image: url(../images/legs2.png);
+    background-size: cover;
+}
+.legs3{
+    background-image: url(../images/legs3.png);
+    background-size: cover;
+}
+.legs4{
+    background-image: url(../images/legs4.png);
+    background-size: cover;
+}
+.legs5{
+    background-image: url(../images/legs5.png);
+    background-size: cover;
+}
+
+#mouth{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.mouth1{
+    background-image: url(../images/mouth1.png);
+    background-size: cover;
+}
+.mouth2{
+    background-image: url(../images/mouth2.png);
+    background-size: cover;
+}
+.mouth3{
+    background-image: url(../images/mouth3.png);
+    background-size: cover;
+}
+.mouth4{
+    background-image: url(../images/mouth4.png);
+    background-size: cover;
+}
+.mouth5{
+    background-image: url(../images/mouth5.png);
+    background-size: cover;
+}
+
+
+#shell{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+
+}
+.shell1{
+    background-image: url(../images/shell1.png);
+    background-size: cover;
+}
+.shell2{
+    background-image: url(../images/shell2.png);
+    background-size: cover;
+}
+.shell3{
+    background-image: url(../images/shell3.png);
+    background-size: cover;
+}
+.shell4{
+    background-image: url(../images/shell4.png);
+    background-size: cover;
+}
+.shell5{
+    background-image: url(../images/shell5.png);
+    background-size: cover;
+}
+
+#eyes{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+}
+.eyes1{
+    background-image: url(../images/eyes1.png);
+    background-size: cover;
+}
+.eyes2{
+    background-image: url(../images/eyes2.png);
+    background-size: cover;
+}
+.eyes3{
+    background-image: url(../images/eyes3.png);
+    background-size: cover;
+}
+.eyes4{
+    background-image: url(../images/eyes4.png);
+    background-size: cover;
+}
+.eyes5{
+    background-image: url(../images/eyes5.png);
+    background-size: cover;
+}
+
+#pattern{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+}
+.pattern1{
+    background-image: url(../images/pattern1.png);
+    background-size: cover;
+}
+.pattern2{
+    background-image: url(../images/pattern2.png);
+    background-size: cover;
+}
+.pattern3{
+    background-image: url(../images/pattern3.png);
+    background-size: cover;
+}
+.pattern4{
+    background-image: url(../images/pattern4.png);
+    background-size: cover;
+}
+.pattern5{
+    background-image: url(../images/pattern5.png);
+    background-size: cover;
+}
+
+.colour1{
+    filter: hue-rotate(0deg);
+}
+.colour2{
+    filter: hue-rotate(60deg);
+}
+.colour3{
+    filter: hue-rotate(120deg);
+}
+.colour4{
+    filter: hue-rotate(180deg);
+}
+.colour5{
+    filter: hue-rotate(240deg);
+}
+.colour6{
+    filter: hue-rotate(300deg);
+}
+.pattern_colour1{
+    filter: hue-rotate(0deg);
+}
+.pattern_colour2{
+    filter: hue-rotate(60deg);
+}
+.pattern_colour3{
+    filter: hue-rotate(120deg);
+}
+.pattern_colour4{
+    filter: hue-rotate(180deg);
+}
+.pattern_colour5{
+    filter: hue-rotate(240deg);
+}
+.pattern_colour6{
+    filter: hue-rotate(300deg);
+}
+/*MENUS*/
+.menu_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10%;
+}
+.part_menus {
+    width: 80%;
+    min-height: 60px;
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    border-radius: 30px;
+}
+
+.button_row {
+    display: flex;
+    justify-content: center;
+}
+.RANDOMIZE {
+    height: 60px;
+    width: 400px;
+    font-family: hit, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: var(--colour3);
+    background-color: var(--colour4);
+    filter: drop-shadow(10px 10px 0px var(--colour1));
+    transition: 0.5s;
+}
+.RANDOMIZE:hover{
+    background-color: var(--colour2);
+    transform: scale(110%);
+}
